@@ -4,13 +4,6 @@ modules = {
         dependsOn 'jquery'
     }
 
-    'angular-ui' {
-        resource url: "vendor/angular-ui/angular-ui.min.js", bundle: 'ui', plugin: 'infra-vendors'
-        resource url: "vendor/angular-ui/angular-ui-ieshiv.min.js", bundle: 'ui', plugin: 'infra-vendors'
-        resource url: "vendor/angular-ui/angular-ui.min.css", bundle: 'ui', plugin: 'infra-vendors'
-        dependsOn "angular"
-    }
-
     'redactor' {
         resource url: 'vendor/redactor/langs/ru.js', plugin: 'infra-vendors'
         resource url: 'vendor/redactor/redactor.min.js', plugin: 'infra-vendors'
@@ -18,14 +11,21 @@ modules = {
         dependsOn 'jquery'
     }
 
-    'masked-input' {
-        resource url: 'vendor/maskedinput/jquery.maskedinput.js', plugin: 'infra-vendors'
-        dependsOn 'jquery'
-    }
-
     'angular' {
         resource 'http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js'
         resource 'http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js'
+        dependsOn 'jquery'
+    }
+
+    'angular-ui' {
+        resource url: "vendor/angular-ui/angular-ui.min.js", bundle: 'ui', plugin: 'infra-vendors'
+        resource url: "vendor/angular-ui/angular-ui-ieshiv.min.js", bundle: 'ui', plugin: 'infra-vendors'
+        resource url: "vendor/angular-ui/angular-ui.min.css", bundle: 'ui', plugin: 'infra-vendors'
+        dependsOn "angular"
+    }
+
+    'masked-input' {
+        resource url: 'vendor/maskedinput/jquery.maskedinput.js', plugin: 'infra-vendors'
         dependsOn 'jquery'
     }
 

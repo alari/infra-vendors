@@ -4,7 +4,6 @@
  Adds ability to sort between multiple sortables.
 
  @author: Michal Ostruszka (http://michalostruszka.pl)
- @since 1 feb 2013
  **/
 
 angular.module('ui.directives').directive('uiMultiSortable', ['ui.config', '$parse', function(uiConfig, $parse) {
