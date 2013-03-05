@@ -25,9 +25,6 @@ grails.project.dependency.resolution = {
         grailsRepo "http://mvn.quonb.org/repo", "quonb"
     }
     dependencies {
-        // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-
-        // runtime 'mysql:mysql-connector-java:5.1.21'
     }
 
     plugins {
@@ -35,7 +32,5 @@ grails.project.dependency.resolution = {
               ":release:2.2.1") {
             export = false
         }
-
-        runtime ":resources:1.2.RC2"
     }
 }
