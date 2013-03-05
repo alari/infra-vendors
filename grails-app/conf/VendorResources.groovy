@@ -12,8 +12,8 @@ modules = {
     }
 
     'angular' {
-        resource 'http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js'
-        resource 'http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js'
+        resource url: 'http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js'
+        resource url: 'http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js'
         dependsOn 'jquery'
     }
 
@@ -30,13 +30,13 @@ modules = {
     }
 
     'jquery-ui' {
-        resource "http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css"
-        resource "http://code.jquery.com/ui/1.10.0/jquery-ui.js"
+        resource url: "http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css"
+        resource url: "http://code.jquery.com/ui/1.10.0/jquery-ui.js"
         dependsOn "jquery"
     }
 
     'jquery' {
-        resource "http://code.jquery.com/jquery-1.8.3.js"
+        resource url: "http://code.jquery.com/jquery-1.8.3.js"
     }
 
     'placeholder' {
