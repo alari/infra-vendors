@@ -37,13 +37,5 @@ grails.project.dependency.resolution = {
         }
 
         runtime ":resources:1.2.RC2"
-
-        compile ":cache-headers:1.1.5"
-        runtime ":cached-resources:1.0"
-        runtime ":zipped-resources:1.0"
-
-        compile(":coffeescript-resources:0.3.5") {
-            excludes "resources", 'rest-client-builder'
-        }
     }
 }
